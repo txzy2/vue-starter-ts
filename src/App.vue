@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {ref, onMounted} from 'vue';
 import {RouterView} from 'vue-router';
-import LoaderTemplate from '@/shared/utils/LoaderTemplate.vue';
+import {Loader} from '@/components/ui/loader';
 
 const loading = ref<boolean>(true);
 
@@ -17,12 +17,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <LoaderTemplate
+  <Loader
     v-if="loading"
     :isLoading="loading"
-    :title="{text: 'Loading...', size: 20}"
+    :title="{text: '#VuePack', size: 20}"
     :needSub="true"
-    :iconSize="30"
+    :iconSize="25"
   />
 
   <div v-show="!loading">

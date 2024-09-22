@@ -1,7 +1,7 @@
 <template>
   <div class="not-found">
     <p>404 Not Found</p>
-    <RouterLink to="/">Home</RouterLink>
+    <RouterLink class="underline" to="/">Home</RouterLink>
   </div>
 </template>
 

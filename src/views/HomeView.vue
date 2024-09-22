@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>
-    <div>Hello World!</div>
+  <main class="h-[100vh] flex flex-col items-center justify-center">
+    <p>Happy Coding :)</p>
 
     <div>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink class="underline" to="/about">About</RouterLink>
     </div>
   </main>
 </template>

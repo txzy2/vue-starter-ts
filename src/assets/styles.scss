@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import './tailwind.css';
 @import './vars.scss';
 @import './base.css';
 
@@ -11,12 +13,6 @@
 }
 
 body {
-  min-height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   color: var(--color-text);
   background: var(--color-background);
 
