@@ -13,8 +13,8 @@
 }
 
 body {
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--vt-c-black);
+  background-color: var(--vt-c-white-soft);
 
   transition:
     color 0.5s,
@@ -35,7 +35,7 @@ a {
 }
 
 body.dark {
-  background-color: var(--vt-c-black);
+  background-color: var(--vt-c-black-soft);
   color: var(--vt-c-white-mute);
 
   a {
