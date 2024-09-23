@@ -17,7 +17,7 @@ body {
   color: var(--vt-c-black);
   background-color: var(--vt-c-white-soft);
 
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.6;
   font-size: 15px;
 
@@ -32,6 +32,10 @@ body {
 
 a {
   color: var(--color-text);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 li:hover {

@@ -26,17 +26,45 @@ import {Motion} from '@oku-ui/motion';
               -
               <a href="https://vitejs.dev/" target="_blank">Vite</a>
             </li>
+
+            <li>
+              -
+              <a href="https://typescriptlang.org/" target="_blank"
+                >TypeScript</a
+              >
+            </li>
             <li>
               -
               <a href="https://pinia.vuejs.org/" target="_blank">Pinia</a>
             </li>
+
+            <li>
+              -
+              <a href="https://sass-lang.com/" target="_blank">SCSS</a>
+            </li>
+
             <li>
               -
               <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>
             </li>
+          </ul>
+        </div>
+      </Motion>
+
+      <Motion
+        :initial="{opacity: 0, scale: 0}"
+        :animate="{opacity: 1, scale: 1}"
+        :exit="{opacity: 0, scale: 0.3, transition: {duration: 0.8}}"
+      >
+        <div class="border-l-2">
+          <ul class="flex flex-col ms-3">
             <li>
               -
-              <a href="https://sass-lang.com/" target="_blank">SCSS</a>
+              <a href="https://vitejs.dev/" target="_blank">Motion Js</a>
+            </li>
+            <li>
+              -
+              <a href="https://pinia.vuejs.org/" target="_blank">Typer Js</a>
             </li>
             <li>
               -
