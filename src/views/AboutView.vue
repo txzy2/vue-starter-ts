@@ -21,6 +21,7 @@ import {Motion} from '@oku-ui/motion';
         :exit="{opacity: 0, scale: 0.3, transition: {duration: 0.8}}"
       >
         <div class="border-l-2">
+          <!-- <p class="ms-3">Extends:</p> -->
           <ul class="flex flex-col ms-3">
             <li>
               -
@@ -53,10 +54,11 @@ import {Motion} from '@oku-ui/motion';
 
       <Motion
         :initial="{opacity: 0, scale: 0}"
-        :animate="{opacity: 1, scale: 1}"
+        :animate="{opacity: 1, scale: 1, transition: {delay: 0.5}}"
         :exit="{opacity: 0, scale: 0.3, transition: {duration: 0.8}}"
       >
         <div class="border-l-2">
+          <!-- <p class="ms-3">Utils:</p> -->
           <ul class="flex flex-col ms-3">
             <li>
               -

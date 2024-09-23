@@ -7,9 +7,11 @@ type loaderProps = {
   /** Loader title text and parameters */
   title: {
     /** Title text */
-    text: string;
+    text?: string;
     /** Font size of the title */
-    size: number;
+    size?: number;
+    /** Optional flag indicating whether the title should be displayed */
+    need: boolean;
   };
   /** Loader icon size */
   iconSize: number;
@@ -25,12 +27,16 @@ const props = defineProps<loaderProps>();
     <Loader :size="props.iconSize" class="animate-spin" />
 
     <div class="flex items-center gap-1">
-      <p class="" :style="{fontSize: `${title.size}px`}">
+      <p
+        v-show="props.title.need"
+        class=""
+        :style="{fontSize: `${title.size}px`}"
+      >
         {{ props.title.text }}
       </p>
 
       <p v-show="props.needSub">
-        <!-- by -->
+        by
         <a
           class="p-2 border rounded-xl hover:underline"
           href="https://github.com/txzy2"
