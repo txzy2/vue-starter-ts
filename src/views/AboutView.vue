@@ -1,15 +1,67 @@
+<script setup lang="ts">
+import {House} from 'lucide-vue-next';
+</script>
+
 <template>
   <div class="about">
-    <p>
-      This is start pack for vue 3. Pack with Vite, TS, Pinia, Vue Router and
-      Tailwind.
-    </p>
+    <div class="flex items-center gap-3">
+      <div class="flex items-center gap-1">
+        <p>This is start pack for</p>
+        <a class="underline" href="https://vuejs.org/" target="_blank">Vue 3</a>
+      </div>
 
-    <RouterLink class="underline" to="/">Home</RouterLink>
+      <div class="border-l-2">
+        <ul class="flex flex-col ms-3">
+          <li>
+            -
+            <a
+              class="hover:underline"
+              href="https://vitejs.dev/"
+              target="_blank"
+              >Vite</a
+            >
+          </li>
+          <li>
+            -
+            <a
+              class="hover:underline"
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+              >TypeScript</a
+            >
+          </li>
+          <li>
+            -
+            <a
+              class="hover:underline"
+              href="https://pinia.vuejs.org/"
+              target="_blank"
+            >
+              Pinia</a
+            >
+          </li>
+          <li>
+            -
+            <a
+              class="hover:underline"
+              href="https://tailwindcss.com/"
+              target="_blank"
+              >Tailwind</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <RouterLink
+      class="flex items-center gap-1 underline transition-all hover:scale-105"
+      to="/"
+      ><House :size="20" /> Home</RouterLink
+    >
   </div>
 </template>
 
-<style>
+<style scoped>
 .about {
   height: 100vh;
 
