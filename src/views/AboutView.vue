@@ -1,53 +1,37 @@
-<script setup lang="ts">
-import {Hash} from 'lucide-vue-next';
-</script>
-
 <template>
   <div class="about">
     <div class="flex items-center gap-3">
       <div class="flex items-center gap-1">
         <p>This is start pack for</p>
-        <a class="underline" href="https://vuejs.org/" target="_blank">Vue 3</a>
+        <a
+          class="underline hover:scale-105"
+          href="https://vuejs.org/"
+          target="_blank"
+          >Vue 3</a
+        ><span>(TS)</span>
       </div>
 
       <div class="border-l-2">
         <ul class="flex flex-col ms-3">
           <li>
             -
-            <a
-              class="hover:underline"
-              href="https://vitejs.dev/"
-              target="_blank"
-              >Vite</a
-            >
+            <a href="https://vitejs.dev/" target="_blank">Vite</a>
           </li>
           <li>
             -
-            <a
-              class="hover:underline"
-              href="https://www.typescriptlang.org/"
-              target="_blank"
-              >TypeScript</a
-            >
+            <a href="https://pinia.vuejs.org/" target="_blank">Pinia</a>
           </li>
           <li>
             -
-            <a
-              class="hover:underline"
-              href="https://pinia.vuejs.org/"
-              target="_blank"
-            >
-              Pinia</a
-            >
+            <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>
           </li>
           <li>
             -
-            <a
-              class="hover:underline"
-              href="https://tailwindcss.com/"
-              target="_blank"
-              >Tailwind</a
-            >
+            <a href="https://sass-lang.com/" target="_blank">SCSS</a>
+          </li>
+          <li>
+            -
+            <a href="https://lucide.dev/" target="_blank">Lucide</a>
           </li>
         </ul>
       </div>
@@ -56,7 +40,7 @@ import {Hash} from 'lucide-vue-next';
     <RouterLink
       class="flex items-center underline transition-all hover:scale-105"
       to="/"
-      ><Hash :size="20" /> Home</RouterLink
+      >Home</RouterLink
     >
   </div>
 </template>

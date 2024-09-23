@@ -16,7 +16,7 @@ onMounted(() => {
 
 <template>
   <button
-    class="px-2"
+    class="px-2 hover:scale-105"
     @click="
       () => {
         mode = mode === 'dark' ? 'light' : 'dark';

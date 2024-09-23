@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @import './tailwind.css';
 @import './vars.scss';
@@ -16,22 +17,25 @@ body {
   color: var(--vt-c-black);
   background-color: var(--vt-c-white-soft);
 
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-
+  font-family: 'Nunito', sans-serif;
   line-height: 1.6;
-
-  font-family: 'Rubik', sans-serif;
-
   font-size: 15px;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  transition:
+    color 0.5s,
+    background-color 0.5s;
 }
 
 a {
   color: var(--color-text);
+}
+
+li:hover {
+  scale: 1.1;
 }
 
 body.dark {
@@ -40,5 +44,9 @@ body.dark {
 
   a {
     color: var(--vt-c-text-dark-2);
+
+    &:hover {
+      color: var(--color-text);
+    }
   }
 }
