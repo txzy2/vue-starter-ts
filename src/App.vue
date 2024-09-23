@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import {ref, onMounted} from 'vue';
 import {RouterView} from 'vue-router';
+
+import {Header} from '@/components';
 import {Loader} from '@/components/ui/loader';
 
 const loading = ref<boolean>(true);
@@ -17,6 +19,8 @@ onMounted(() => {
 </script>
 
 <template>
+  <Header />
+
   <Loader
     v-if="loading"
     :isLoading="loading"
@@ -25,7 +29,7 @@ onMounted(() => {
     :iconSize="25"
   />
 
-  <div v-show="!loading">
+  <div v-else>
     <RouterView />
   </div>
 </template>

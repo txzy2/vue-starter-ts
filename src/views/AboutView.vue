@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {House} from 'lucide-vue-next';
+import {Hash} from 'lucide-vue-next';
 </script>
 
 <template>
@@ -54,16 +54,16 @@ import {House} from 'lucide-vue-next';
     </div>
 
     <RouterLink
-      class="flex items-center gap-1 underline transition-all hover:scale-105"
+      class="flex items-center underline transition-all hover:scale-105"
       to="/"
-      ><House :size="20" /> Home</RouterLink
+      ><Hash :size="20" /> Home</RouterLink
     >
   </div>
 </template>
 
 <style scoped>
 .about {
-  height: 100vh;
+  height: 90vh;
 
   display: flex;
   align-items: center;

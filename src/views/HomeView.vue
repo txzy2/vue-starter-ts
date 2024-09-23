@@ -1,7 +1,5 @@
-<script setup lang="ts"></script>
-
 <template>
-  <main class="h-[100vh] flex flex-col items-center justify-center">
+  <main class="h-[90vh] flex flex-col items-center justify-center">
     <p>Happy Coding :)</p>
 
     <div>

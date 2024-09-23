@@ -33,3 +33,12 @@ body {
 a {
   color: var(--color-text);
 }
+
+body.dark {
+  background-color: var(--vt-c-black);
+  color: var(--vt-c-white-mute);
+
+  a {
+    color: var(--vt-c-text-dark-2);
+  }
+}

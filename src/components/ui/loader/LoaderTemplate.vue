@@ -21,7 +21,7 @@ const props = defineProps<loaderProps>();
 </script>
 
 <template>
-  <div class="h-screen flex items-center justify-center gap-2">
+  <div class="h-[90vh] flex items-center justify-center gap-2">
     <Loader :size="props.iconSize" class="animate-spin" />
 
     <div class="flex items-center gap-1">
