@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import {Motion} from '@oku-ui/motion';
+</script>
+
 <template>
   <div class="about">
     <div class="flex items-center gap-3">
@@ -11,30 +15,36 @@
         ><span>(TS)</span>
       </div>
 
-      <div class="border-l-2">
-        <ul class="flex flex-col ms-3">
-          <li>
-            -
-            <a href="https://vitejs.dev/" target="_blank">Vite</a>
-          </li>
-          <li>
-            -
-            <a href="https://pinia.vuejs.org/" target="_blank">Pinia</a>
-          </li>
-          <li>
-            -
-            <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>
-          </li>
-          <li>
-            -
-            <a href="https://sass-lang.com/" target="_blank">SCSS</a>
-          </li>
-          <li>
-            -
-            <a href="https://lucide.dev/" target="_blank">Lucide</a>
-          </li>
-        </ul>
-      </div>
+      <Motion
+        :initial="{opacity: 0, scale: 0}"
+        :animate="{opacity: 1, scale: 1}"
+        :exit="{opacity: 0, scale: 0.3, transition: {duration: 0.8}}"
+      >
+        <div class="border-l-2">
+          <ul class="flex flex-col ms-3">
+            <li>
+              -
+              <a href="https://vitejs.dev/" target="_blank">Vite</a>
+            </li>
+            <li>
+              -
+              <a href="https://pinia.vuejs.org/" target="_blank">Pinia</a>
+            </li>
+            <li>
+              -
+              <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>
+            </li>
+            <li>
+              -
+              <a href="https://sass-lang.com/" target="_blank">SCSS</a>
+            </li>
+            <li>
+              -
+              <a href="https://lucide.dev/" target="_blank">Lucide</a>
+            </li>
+          </ul>
+        </div>
+      </Motion>
     </div>
 
     <RouterLink

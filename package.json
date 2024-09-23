@@ -14,6 +14,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@oku-ui/motion": "^0.3.4",
     "@vueuse/core": "^11.1.0",
     "gh-pages": "^6.1.1",
     "lucide-vue-next": "^0.427.0",

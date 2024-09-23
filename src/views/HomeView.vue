@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {ref, onMounted} from 'vue';
 import Typed from 'typed.js';
+import {Motion} from '@oku-ui/motion';
 
 const typedElement = ref<HTMLElement | null>(null);
 
@@ -25,14 +26,20 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="h-[90vh] flex flex-col items-center justify-center">
-    <div class="flex items-center gap-1">
-      {{ '<' }}<span ref="typedElement"></span>
-      <span class="coding-text" n></span> {{ '/>' }}
-    </div>
+  <Motion
+    :initial="{opacity: 0, scale: 0}"
+    :animate="{opacity: 1, scale: 1}"
+    :exit="{opacity: 0, scale: 0.3}"
+  >
+    <main class="h-[90vh] flex flex-col items-center justify-center">
+      <div class="flex items-center gap-1">
+        {{ '<' }}<span ref="typedElement"></span>
+        <span class="coding-text"></span> {{ '/>' }}
+      </div>
 
-    <RouterLink class="underline" to="/about">About</RouterLink>
-  </main>
+      <RouterLink class="underline" to="/about">About</RouterLink>
+    </main>
+  </Motion>
 </template>
 
 <style scoped>
